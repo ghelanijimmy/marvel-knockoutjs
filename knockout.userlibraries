@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="bootstrap.bundle">
+    <archive path="C:/Users/jghelani/IdeaProjects/knockout/js/bootstrap.bundle.min.js" />
+    <archive path="C:/Users/jghelani/IdeaProjects/knockout/js/bootstrap.min.js" />
+    <archive path="C:/Users/jghelani/IdeaProjects/knockout/js/jquery-3.4.0.min.js" />
+  </library>
+  <library name="knockout-3.5.0">
+    <archive path="C:/Users/jghelani/.IntelliJIdea2019.1/config/javascript/extLibs/http_knockoutjs.com_downloads_knockout-3.5.0.js" />
+  </library>
+  <library name="jquery-3.4.0">
+    <archive path="C:/Users/jghelani/.IntelliJIdea2019.1/config/javascript/extLibs/http_code.jquery.com_jquery-3.4.0.js" />
+  </library>
+</eclipse-userlibraries>
+

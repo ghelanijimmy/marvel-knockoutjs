@@ -1,0 +1,7 @@
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  &__character {
+    flex: 0 0 25%;
+  }
+}

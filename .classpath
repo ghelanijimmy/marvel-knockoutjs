@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/knockout-3.5.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jquery-3.4.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/bootstrap.bundle"/>
+	<classpathentry kind="output" path="out/production/knockout"/>
+</classpath>

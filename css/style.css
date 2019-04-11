@@ -1,0 +1,9 @@
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-wrapper__character {
+  flex: 0 0 25%;
+}
+
+/*# sourceMappingURL=style.css.map */
