@@ -1,7 +1,9 @@
+import * as ko from "knockout";
+
 function testViewModel() {
   // Data
   this.mData = ko.observable();
-  this.startsWith = ko.observable();
+  this.startsWith = ko.observable('haw');
 
   this.refreshURL = ko.computed(() => {
     $.ajax({
@@ -18,4 +20,5 @@ function testViewModel() {
 }
 ko.applyBindings(new testViewModel());
 
+export default testViewModel();
 //API KEY FOR MARVEL DEV: 7ae845fb26988972f985d85032b8e67f
