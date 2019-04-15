@@ -3,16 +3,17 @@
   flex-wrap: wrap;
   align-items: stretch;
   &__character {
-    flex: 1 0 20%;
+    flex: 1 1 33.3%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
-    & > * {
+    span {
       flex-basis: 100%;
     }
-    h1 {
-      flex-basis: 70%;
+    a {
+      flex-basis: auto;
+      max-height: 200px;
     }
   }
   &__thumb {

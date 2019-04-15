@@ -1,6 +1,5 @@
 <html lang="en">
   <head title="knockout">
-    <link rel="stylesheet" href="css/bootstrap.css" />
     <!--    <link rel="stylesheet" href="css/style.css" />-->
   </head>
 
@@ -13,18 +12,17 @@
     />
     <div class="main-wrapper" data-bind="foreach: mData">
       <div class="main-wrapper__character">
-        <h1 data-bind="text: name"></h1>
-        <img src="" alt="" class="main-wrapper__thumb"
-          data-bind="attr: { src: thumbnail.path + '.' + thumbnail.extension, alt: name }"
-        />
+<!--        <h1 data-bind="text: name"></h1>-->
+<!--        <img src="" alt="" class="main-wrapper__thumb"-->
+<!--          data-bind="attr: { src: thumbnail.path + '.' + thumbnail.extension, alt: name }"-->
+<!--        />-->
+          <span>
+              <a data-bind="attr:{href: photographer_url}, text: photographer" target="_blank"></a>
+          </span>
+          <a data-bind="attr: {href: url}" target="_blank">
+            <img src="" alt="" data-bind="attr:{src: src.small, alt: photographer}">
+          </a>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
