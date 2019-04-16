@@ -20,9 +20,10 @@
               <a data-bind="attr:{href: photographer_url}, text: photographer" target="_blank"></a>
           </span>
           <a data-bind="attr: {href: url}" target="_blank">
-            <img src="" alt="" data-bind="attr:{src: src.small, alt: photographer}">
+            <img src="" alt="" data-bind="attr:{src: src.small, alt: photographer + ' ' + id}">
           </a>
       </div>
     </div>
+  <button data-bind="visible: showNext">Next</button>
   </body>
 </html>

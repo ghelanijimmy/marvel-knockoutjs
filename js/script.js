@@ -4,8 +4,15 @@ function testViewModel() {
   // Data
   this.mData = ko.observable([]);
   this.startsWith = ko.observable('vacation');
+  this.showNext = ko.observable(true);
+  this.apiURL = ko.observable(`https://api.pexels.com/v1/search?query=${this.startsWith().split(' ').join('+')}&per_page=15&page=1`);
+  this.nextUrl = ko.observable();
 
   this.refreshURL = ko.computed(() => {
+      $('button').mousedown((e)=>{
+          e.preventDefault();
+          this.apiURL(this.nextUrl());
+      })
     $.ajax({
       // url:
       //   "https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=" +
@@ -15,14 +22,19 @@ function testViewModel() {
       //   console.log(result);
       //   this.mData(result.data.results);
       // }
-      //   url:`https://api.pexels.com/v1/search?query=${this.startsWith().split(' ').join('+')}&per_page=15&page=1`,
-        url: "./response.json",
+        url:this.apiURL(),
+      //   url: "./response.json",
         headers: {
             'Authorization': '563492ad6f91700001000001a17c30da828440c79fa4aa1a3acc19d8'
         },
         success: result=>{
-            console.log(result);
             this.mData(result.photos);
+            this.nextUrl(result.next_page);
+            if(result.next_page){
+                this.showNext(true);
+            } else {
+                this.showNext(false);
+            }
         },
     });
   });
