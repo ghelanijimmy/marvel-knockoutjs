@@ -1,7 +1,24 @@
 .main-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   &__character {
-    flex: 0 0 25%;
+    flex: 1 1 33.3%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    span {
+      flex-basis: 100%;
+    }
+    a {
+      flex-basis: auto;
+      max-height: 200px;
+    }
+  }
+  &__thumb {
+    max-width: 200px;
   }
 }

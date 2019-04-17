@@ -1,9 +1,25 @@
 .main-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 .main-wrapper__character {
-  flex: 0 0 25%;
+  flex: 1 1 33.3%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.main-wrapper__character span {
+  flex-basis: 100%;
+}
+.main-wrapper__character a {
+  flex-basis: auto;
+  max-height: 200px;
+}
+.main-wrapper__thumb {
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
