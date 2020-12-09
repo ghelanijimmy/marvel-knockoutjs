@@ -32,7 +32,7 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.0",
     "knockout": "^3.5.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "popper.js": "^1.15.0"
   }
 }
